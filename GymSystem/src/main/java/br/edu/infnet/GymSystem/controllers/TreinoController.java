@@ -16,9 +16,7 @@ public class TreinoController {
     private TreinoService service;
 
     @PostMapping
-    public Treino cadastrar(
-            @RequestBody Treino treino){
-
+    public Treino cadastrar(@RequestBody Treino treino){
         return service.salvar(treino);
     }
 }
